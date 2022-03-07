@@ -15,4 +15,7 @@
 
 <title>Mirror EC Test</title>
 <p> Mirror EC Test </p>
-<a href = "conversion.html">Conversion</a>
+<label for="transaction-id-input"> Transaction ID: </label>
+<input type="number" id="transaction-id-input" name="transaction-id"/>
+<br>
+<a href= '' onclick="this.href='conversion.html?transaction_id='+document.getElementById('transaction-id-input').value">API EC Conversion</a>
