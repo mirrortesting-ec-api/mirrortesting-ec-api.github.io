@@ -13,10 +13,12 @@
 </script>
 <!-- Event snippet for Website sale conversion page -->
 <script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
   gtag('event', 'conversion', {
       'send_to': 'AW-448812149/NCCcCLepr_gCEPWogdYB',
-      'transaction_id': urlParams.get('transaction_id')
-      'value': urlParams.get('value')
+      'transaction_id': urlParams.get('transaction_id'),
+      'value': urlParams.get('value'),
       'currency': 'USD'
   });
 </script>
